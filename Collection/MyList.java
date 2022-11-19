@@ -1,10 +1,30 @@
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Iterator;
+import java.util.Stack;
 
 class MyList{
 
     public static void main(String args[]) {
+        // ArrayListDemo();
+        StackDemo();
+    }
+
+    public static void StackDemo(){
+        Stack<String> stk= new Stack<>();
+        stk.push("Tilakchand");
+        stk.push("Komal");
+        stk.push("Mohit");
+        stk.push("Aachu");
+
+        System.out.println("Stack: "+stk);
+        System.out.println("top element: "+stk.peek());
+        System.out.println(stk.pop());
+        System.out.println("Stack: "+stk);
+
+    }
+
+    public static void ArrayListDemo(){
         // creat List object of ArrayList type
         List<Integer> arr= new ArrayList<>();
         // to add element in end of list
