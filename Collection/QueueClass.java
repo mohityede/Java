@@ -2,11 +2,13 @@ import java.util.Queue;
 import java.util.LinkedList;
 import java.util.PriorityQueue;
 import java.util.Comparator;
+import java.util.ArrayDeque;
 
 public class QueueClass{
     public static void main(String args[]){
         // QueueDemo();
-        PriorityQueueDemo();
+        // PriorityQueueDemo();
+        ArrayDequeDemo();
     }
 
     public static void QueueDemo(){
@@ -48,5 +50,25 @@ public class QueueClass{
         System.out.println("pq2:"+pq2);
         pq2.poll();
         System.out.println("pq2:"+pq2);
+    }
+
+    public static void ArrayDequeDemo(){
+        ArrayDeque<Integer> aq= new ArrayDeque<>();
+        // offer work same as queue
+        aq.offer(23);
+        // offerFirst add element to start of queue
+        aq.offerFirst(82);
+        // offerLast same as offer
+        aq.offerLast(92);
+        aq.offer(19);
+
+        System.out.println("aq:"+aq);
+        System.out.println("aq.poll():"+aq.poll());
+        System.out.println("aq:"+aq);
+        System.out.println("aq.peekFirst :"+aq.peekFirst());
+        System.out.println("aq.peekLast :"+aq.peekLast());
+        System.out.println("aq:"+aq);
+        System.out.println("aq.pollFirst():"+aq.pollFirst());
+        System.out.println("aq.pollLast():"+aq.pollLast());
     }
 }
