@@ -1,9 +1,21 @@
 import java.util.Set;
 import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.TreeSet;
 
 public class MySet{
     public static void main(String args[]){
+        // set store only unique elements
+        // HashSet elements are stored in random order
         HashSetDemo();
+
+        // all the HashSet functions work in same way for LinkedHashSet and TreeSet
+        // its same as HashSet but its implimented on top of linkedList(elements are in order as inserted)
+        Set<Integer> s2 = new LinkedHashSet<>();
+
+        // its is also same as hashSet but its implimented on top of Tree (all the elements are in sorted order)
+        Set<Integer> s3 = new TreeSet<>();
+
     }
 
     public static void HashSetDemo(){
