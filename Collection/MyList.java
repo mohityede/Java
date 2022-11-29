@@ -1,39 +1,39 @@
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Stack;
 
-class MyList{
+class MyList {
 
     public static void main(String args[]) {
         // ArrayListDemo();
         StackDemo();
     }
 
-    public static void StackDemo(){
-        Stack<String> stk= new Stack<>();
+    public static void StackDemo() {
+        Stack<String> stk = new Stack<>();
         stk.push("Tilakchand");
         stk.push("Komal");
         stk.push("Mohit");
         stk.push("Aachu");
 
-        System.out.println("Stack: "+stk);
-        System.out.println("top element: "+stk.peek());
+        System.out.println("Stack: " + stk);
+        System.out.println("top element: " + stk.peek());
         System.out.println(stk.pop());
-        System.out.println("Stack: "+stk);
+        System.out.println("Stack: " + stk);
 
     }
 
-    public static void ArrayListDemo(){
+    public static void ArrayListDemo() {
         // creat List object of ArrayList type
-        List<Integer> arr= new ArrayList<>();
+        List<Integer> arr = new ArrayList<>();
         // to add element in end of list
         arr.add(23);
         arr.add(37);
-        arr.add(1,21);
+        arr.add(1, 21);
         System.out.println(arr);
 
-        List<Integer> arr2= new ArrayList<>();
+        List<Integer> arr2 = new ArrayList<>();
         arr2.add(132);
         arr2.add(193);
         arr2.add(127);
@@ -51,31 +51,31 @@ class MyList{
         // to remove integer by value
         arr.remove(Integer.valueOf(37));
         // to change value of index
-        arr.set(0,50000);        
+        arr.set(0, 50000);
         // to check element exist in ArrayList or not
-        System.out.println("contains 50:"+arr.contains(50));
-        System.out.println("contains 192:"+arr.contains(192));
+        System.out.println("contains 50:" + arr.contains(50));
+        System.out.println("contains 192:" + arr.contains(192));
         // to get size of ArrayList (number of element present)
-        int n= arr.size();
+        int n = arr.size();
         System.out.print("\n Arr using for loop:");
-        for(int i=0;i<n;i++){
-            System.out.print(arr.get(i)+",");
+        for (int i = 0; i < n; i++) {
+            System.out.print(arr.get(i) + ",");
         }
 
         System.out.print("\n Arr using foreach loop:");
-        for(int ele:arr){
-            System.out.print(ele+",");
+        for (int ele : arr) {
+            System.out.print(ele + ",");
         }
 
         System.out.print("\n Arr usint iterator:");
         // Iterator Class object creation
-        Iterator<Integer> itr= arr.iterator();
-        while(itr.hasNext()){
-            System.out.print(itr.next()+" ");
+        Iterator<Integer> itr = arr.iterator();
+        while (itr.hasNext()) {
+            System.out.print(itr.next() + " ");
         }
 
         // to clear all the element of ArrayList
         arr.clear();
-        System.out.println("\narr:"+arr);
+        System.out.println("\narr:" + arr);
     }
 }
