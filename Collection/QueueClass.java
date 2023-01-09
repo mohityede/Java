@@ -7,8 +7,8 @@ import java.util.Queue;
 public class QueueClass {
     public static void main(String args[]) {
         // QueueDemo();
-        // PriorityQueueDemo();
-        ArrayDequeDemo();
+        PriorityQueueDemo();
+        // ArrayDequeDemo();
     }
 
     public static void QueueDemo() {
