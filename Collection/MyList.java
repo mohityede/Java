@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Stack;
@@ -8,6 +10,27 @@ class MyList {
     public static void main(String args[]) {
         // ArrayListDemo();
         StackDemo();
+    }
+
+    public static void ComparatorDemo() {
+        Comparator<Integer> com = new Comparator<Integer>() {
+            public int compare(Integer o1, Integer o2) {
+                if (o1 % 2 == 0 && o2 % 2 != 0)
+                    return -1;
+                else
+                    return 1;
+            };
+        };
+        List<Integer> lst = new ArrayList<>();
+        lst.add(9);
+        lst.add(5);
+        lst.add(11);
+        lst.add(2);
+        lst.add(8);
+        lst.add(4);
+        System.out.println("before sort:" + lst);
+        Collections.sort(lst, com);
+        System.out.println("after sort:" + lst);
     }
 
     public static void StackDemo() {
