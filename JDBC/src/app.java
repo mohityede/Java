@@ -12,7 +12,7 @@ public class app {
          */
         String url="jdbc:mysql://localhost:3306/world";
         String username="root";
-        String password="Yede@25545";
+        String password="Temp@1234";
         Connection conn=null;
         try{
 //            Class.forName("com.mysql.cj.jdbc.Driver");
