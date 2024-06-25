@@ -53,7 +53,6 @@ public class app {
             sm.setString(2,countryCode);
             sm.setString(3,district);
             sm.setInt(4,population);
-
             sm.execute();
 
             conn.close();

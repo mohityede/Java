@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+<!--    <bean id="dev1" class="org.themohit.Developer" scope="prototype" ></bean>-->
+    <bean id="dev2" class="org.themohit.Developer" autowire="byType">
+
+        <property name="age" value="22"></property>
+        <property name="com">
+            <bean id="com1" class="org.themohit.Laptop"/>
+        </property>
+
+<!--        <constructor-arg name="age" value="24" />-->
+<!--        <constructor-arg name="com" ref="com2" />-->
+
+<!--        <constructor-arg type="org.themohit.Laptop" ref="lap1" />-->
+<!--        <constructor-arg type="int" value="24" />-->
+
+<!--        <constructor-arg index="1" ref="lap1" />-->
+<!--        <constructor-arg index="0" value="24" />-->
+
+
+
+    </bean>
+
+<!--    <bean id="lap1" class="org.themohit.Laptop" />-->
+<!--    <bean id="desk1" class="org.themohit.Desktop" />-->
+
+    <bean id="com2" class="org.themohit.Desktop" primary="true" lazy-init="true" />
+
+</beans>
