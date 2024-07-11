@@ -32,7 +32,7 @@ public class StudentController {
         return students.toString();
     }
 
-    @PostMapping("/student")
+    @PostMapping("/student/register")
     public String addStudent(@RequestBody Student student){
         students.add(student);
         return student+" added successfully";

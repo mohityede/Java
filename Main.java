@@ -39,13 +39,14 @@ public class Main {
 		System.out.println("The percentage is : " + avg); */
 
 	
-		int a = 5;
-		float b = 6.524f;
-		System.out.printf("The value of a is  %d  and The value of b is %f   " , a , b);
-		
-  
-  
-  
+	//	int a = 5;
+	//	float b = 6.524f;
+	//	System.out.printf("The value of a is  %d  and The value of b is %f   " , a , b);
+
+	String name = "Sakshi";
+	name = name.toLowerCase();
+	System.out.println(name.toLowerCase());
+	
   
   
      }
